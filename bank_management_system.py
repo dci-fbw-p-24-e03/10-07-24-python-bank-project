@@ -74,7 +74,38 @@ def send_money(clients,from_id,to_id,amount):
             
     save_client(clients)
 
+def get_balance(clients, id) -> float:
+    client = get_client(clients, id)
+    return client["balance"]
+
+def withdraw_money(Clients, id: int, amount: float) -> float:
+    balance = get_balance(Clients, id)
+    if balance >= amount:
+        new_balance = balance - amount
+        update_client(Clients, client_id=id, client_balance=new_balance)
+        return new_balance
+    else:
+        print(f"The amount {amount} cannot be withdrawn, because it exceeds the balance {balance}")
+        return None
+
+def deposit_money(Clients, id, amount) -> None:
+    balance = get_balance(Clients, id)
+    new_balance = balance + amount
+    update_client(Clients, id, client_balance=new_balance)
+    
+
+
+def transfer_money(clients,from_id,to_id,amount):
+    money = withdraw_money(clients, from_id, amount)
+    if money != None:
+        deposit_money(clients, to_id, amount)
+        print(f"The amount of {amount} was transferred")
+    else:
+        print(f"The amount {amount} could not be transferred.")
 
 
 
+Clients_ = load_clients()
+
+transfer_money(Clients_, 3, 4, 500)
 

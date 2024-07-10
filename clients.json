@@ -1,0 +1,16 @@
+{
+    "clients": [
+        {
+            "client id": 3,
+            "client name": "Ole",
+            "client dob": "01/01/2000",
+            "balance": 1000001100200000
+        },
+        {
+            "client id": 4,
+            "client name": "Ali",
+            "client dob": "01/01/2000",
+            "balance": 1999800000
+        }
+    ]
+}

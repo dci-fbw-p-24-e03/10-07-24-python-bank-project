@@ -60,6 +60,11 @@ def get_total_balance(clients):
     total = sum([client['balance'] for client in clients])
     return total
 
+"""
+
+Too tired to find the mistake. Wrote a new  function definition.
+
+
 def send_money(clients,from_id,to_id,amount):
     client_send = get_client(clients,from_id)
     if amount < client_send['balance']:
@@ -72,7 +77,7 @@ def send_money(clients,from_id,to_id,amount):
     client_receive['balance'] += amount
     print(f"The amount of {amount} was added to Client {client_receive['client id']} account\nThe new balance is {client_receive['balance']}")
             
-    save_client(clients)
+    save_client(clients) """
 
 def get_balance(clients, id) -> float:
     client = get_client(clients, id)

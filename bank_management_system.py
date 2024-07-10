@@ -88,7 +88,7 @@ def withdraw_money(Clients, id: int, amount: float) -> float:
     if balance >= amount:
         new_balance = balance - amount
         update_client(Clients, client_id=id, client_balance=new_balance)
-        return new_balance
+        return amount
     else:
         print(f"The amount {amount} cannot be withdrawn, because it exceeds the balance {balance}")
         return None

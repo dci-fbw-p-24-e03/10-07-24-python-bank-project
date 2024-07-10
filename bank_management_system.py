@@ -64,17 +64,19 @@ def send_money(clients,from_id,to_id,amount):
     client_send = get_client(clients,from_id)
     if amount < client_send['balance']:
         client_send['balance'] -= amount
-        print(f'The amount of {amount} will be deducted from Client {from_id}\nThe new balance is {client_send["balance"]}')
         
-    
-            
-    client_receive = get_client(clients,to_id)
-    client_receive['balance'] += amount
-    print(f"The amount of {amount} was added to Client {client_receive['client id']} account\nThe new balance is {client_receive['balance']}")
+        client_receive = get_client(clients,to_id)
+        client_receive['balance'] += amount
+        print(f'The amount of {amount} will be deducted from Client {from_id}\nThe new balance is {client_send["balance"]}')
+        print(f"The amount of {amount} was added to Client {client_receive['client id']} account\nThe new balance is {client_receive['balance']}")
+    else:
+        print("Not enough money in account!")  
+             
+   
             
     save_client(clients)
 
-
+send_money(load_clients(),4,3,60000)
 
 
 

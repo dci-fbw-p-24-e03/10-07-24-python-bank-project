@@ -1,16 +1,64 @@
 {
     "clients": [
         {
+            "client id": 1,
+            "client name": "John",
+            "client dob": "01/01/2000",
+            "balance": 2500
+        },
+        {
+            "client id": 2,
+            "client name": "Jane",
+            "client dob": "01/01/2000",
+            "balance": 3500
+        },
+        {
             "client id": 3,
             "client name": "Ole",
             "client dob": "01/01/2000",
-            "balance": 1000001100200000
+            "balance": 10000
         },
         {
             "client id": 4,
             "client name": "Ali",
             "client dob": "01/01/2000",
-            "balance": 1999800000
+            "balance": 1200
+        },
+        {
+            "client id": 5,
+            "client name": "Musa",
+            "client dob": "01/01/2000",
+            "balance": 1000
+        },
+        {
+            "client id": 6,
+            "client name": "Sadio",
+            "client dob": "01/01/2000",
+            "balance": 137.66
+        },
+        {
+            "client id": 7,
+            "client name": "Virgil",
+            "client dob": "01/01/2000",
+            "balance": -5
+        },
+        {
+            "client id": 8,
+            "client name": "Fabinho",
+            "client dob": "01/01/2000",
+            "balance": 8650.33
+        },
+        {
+            "client id": 9,
+            "client name": "Thiago",
+            "client dob": "01/01/2000",
+            "balance": 4400.99
+        },
+        {
+            "client id": 10,
+            "client name": "Henderson",
+            "client dob": "01/01/2000",
+            "balance": 75.4
         }
     ]
 }

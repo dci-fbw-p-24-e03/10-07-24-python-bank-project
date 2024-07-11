@@ -18,7 +18,7 @@ def add_client(clients,client_name,client_dob,client_balance):
         client_id = clients[-1]['client id']+1
     clients.append({"client id":client_id,"client name":client_name,"client dob":client_dob,'balance':client_balance})
     save_client(clients)
-def get_client(clients,client_id):
+def get_client(clients,client_id) -> dict[str:any]:
     for client in clients:
         if client['client id'] == client_id:
             return client
@@ -83,7 +83,7 @@ def get_balance(clients, id) -> float:
     client = get_client(clients, id)
     return client["balance"]
 
-def withdraw_money(Clients, id: int, amount: float) -> float:
+def withdraw_money(Clients, id: int, amount: float) -> float | None:
     balance = get_balance(Clients, id)
     if balance >= amount:
         new_balance = balance - amount
@@ -109,8 +109,7 @@ def transfer_money(clients,from_id,to_id,amount):
         print(f"The amount {amount} could not be transferred.")
 
 
-
-Clients_ = load_clients()
-
-transfer_money(Clients_, 3, 4, 500)
+if __name__ == "__main__":
+    Clients_ = load_clients()
+    transfer_money(Clients_, 3, 4, 650)
 

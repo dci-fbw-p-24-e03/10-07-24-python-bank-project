@@ -4,13 +4,13 @@
             "client id": 3,
             "client name": "Ole",
             "client dob": "01/01/2000",
-            "balance": 1000001100197150
+            "balance": 1000001100195350
         },
         {
             "client id": 4,
             "client name": "Ali",
             "client dob": "01/01/2000",
-            "balance": 1999802500
+            "balance": 1999804300
         }
     ]
 }

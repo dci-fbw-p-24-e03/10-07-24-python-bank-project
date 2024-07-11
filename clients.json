@@ -3,7 +3,7 @@
         {
             "client id": 3,
             "client name": "Ole",
-            "client dob": "01/01/2000",
+            "client dob": "2000-01-01",
             "balance": 1000001100200000
         },
         {
@@ -16,13 +16,7 @@
             "client id": 6,
             "client name": "Jane Smith",
             "client dob": "1985-05-15",
-            "balance": 1300
-        },
-        {
-            "client id": 7,
-            "client name": "John Doe",
-            "client dob": "1990-01-01",
-            "balance": 1000
+            "balance": 1256
         },
         {
             "client id": 8,
@@ -46,19 +40,25 @@
             "client id": 12,
             "client name": "Jane Smith",
             "client dob": "1985-05-15",
-            "balance": 1500
+            "balance": 500.0
         },
         {
             "client id": 13,
             "client name": "John Doe",
             "client dob": "1990-01-01",
-            "balance": 1000
+            "balance": 2500.0
         },
         {
             "client id": 14,
             "client name": "Jane Smith",
             "client dob": "1985-05-15",
-            "balance": 1500
+            "balance": 101500.0
+        },
+        {
+            "client id": 15,
+            "client name": "Julio",
+            "client dob": "2000-01-03",
+            "balance": 99900000.0
         }
     ]
 }
